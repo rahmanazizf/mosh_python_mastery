@@ -1,5 +1,12 @@
 class Point:
+    
+    # class level attribute
+    default_color = 'red' # this attribute is shared for all instances of this class, no matter the object is the default color will be red 
+    # but the value can still be changed
+    
     def __init__(self, x, y):
+        # these are instant attributes
+        # every object can have different values of instant objects
         self.x = x
         self.y = y
 
